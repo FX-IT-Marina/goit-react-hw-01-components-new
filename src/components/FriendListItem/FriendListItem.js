@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
-import { FriendItem } from './FriendListItem.styled';
-import { Status } from './FriendListItem.styled';
-import { FriendAvatar } from './FriendListItem.styled';
-import { Name } from './FriendListItem.styled';
+import {
+  FriendItem,
+  Status,
+  FriendAvatar,
+  Name,
+} from './FriendListItem.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   const statusColor = isOnline ? 'green' : 'red';

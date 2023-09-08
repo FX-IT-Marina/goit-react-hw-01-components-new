@@ -4,10 +4,11 @@ export const ProfileCard = styled.div`
   background-color: white;
   border-radius: 30px;
   border: 3px solid gray;
-  width: 500px;
+  width: 400px;
   padding-top: 50px;
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.41) 2px 3px 14px 2px;
+  transition: box-shadow 0.5s ease-in-out;
   &:hover {
     box-shadow: -4px 7px 65px 6px rgba(13, 13, 13, 0.75);
     -webkit-box-shadow: -4px 7px 65px 6px rgba(13, 13, 13, 0.75);
@@ -20,6 +21,7 @@ export const Description = styled.div`
   align-items: center;
   flex-direction: column;
 `;
+
 export const Avatar = styled.img`
   border-radius: 50%;
   width: 200px;
@@ -41,7 +43,6 @@ export const ProfileDescription = styled.p`
 
 export const Statistics = styled.ul`
   display: flex;
-
   text-align: center;
   list-style: none;
   margin-top: 0;

@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
-import { ProfileCard } from './Profile.styled';
-import { Description } from './Profile.styled';
-import { Avatar } from './Profile.styled';
-import { Name } from './Profile.styled';
-import { ProfileDescription } from './Profile.styled';
-import { Statistics } from './Profile.styled';
-import { Items } from './Profile.styled';
-import { Label } from './Profile.styled';
-import { Quantity } from './Profile.styled';
+import {
+  ProfileCard,
+  Description,
+  Avatar,
+  Name,
+  ProfileDescription,
+  Statistics,
+  Items,
+  Label,
+  Quantity,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -18,7 +20,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <ProfileDescription>@{tag}</ProfileDescription>
         <ProfileDescription>{location}</ProfileDescription>
       </Description>
-
       <Statistics>
         <Items>
           <Label>Followers</Label>
